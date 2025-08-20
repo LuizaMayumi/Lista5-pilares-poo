@@ -3,10 +3,16 @@ package exercicio4;
 public class Livro extends ItemBiblioteca {
     private String autor;
 
+    public Livro(String autor) {
+        this.autor = autor;
+    }
+
     @Override
     public String exibirInfo() {
-        String info = super.exibirInfo();
-
-        return info + "\nAutor:" + autor;
+        if (!autor.isEmpty()) {
+            return "Autor: " + autor;
+        } else {
+            return "Autor precisa ser informado";
+        }
     }
 }

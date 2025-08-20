@@ -3,6 +3,8 @@ import exercicio1.Produto;
 import exercicio2.ContaBancaria;
 import exercicio3.Tarefa;
 import exercicio4.ItemBiblioteca;
+import exercicio4.Livro;
+import exercicio4.Revista;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,6 +28,18 @@ public class Main {
 
 //        4
         ItemBiblioteca item1 = new ItemBiblioteca();
+
+        item1.titulo = "A menina que roubava livros";
+        item1.anoPublicado = 2005;
+
+        Livro livro1 = new Livro("Markus Zusak");
+        Revista revista1 = new Revista();
+        revista1.edicao = 1;
+        System.out.println(livro1.exibirInfo());
+        System.out.println(item1.exibirInfo());
+        System.out.println(revista1.exibirInfo());
+
+
 
 
     }

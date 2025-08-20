@@ -1,13 +1,14 @@
 package exercicio4;
 
-import java.math.BigDecimal;
-
 public class Revista extends ItemBiblioteca {
-    private int edicao;
+    public int edicao;
 
     @Override
     public String exibirInfo() {
-        String info = super.exibirInfo();
-        return info + "\nEdicao: " + edicao;
+        if (edicao != 0) {
+            return "Edicao: " + edicao;
+        } else {
+            return "Edicao do livro, precisa ser informada";
+        }
     }
 }
