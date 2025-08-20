@@ -7,6 +7,7 @@ import exercicio4.Livro;
 import exercicio4.Revista;
 import exercicio5.ProdutoDigital;
 import exercicio5.ProdutoFisico;
+import exercicio6.Funcionario;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,14 +43,19 @@ public class Main {
 //        System.out.println(revista1.exibirInfo());
 
 //        5
-        ProdutoDigital digital1 = new ProdutoDigital(149.90,800);
-        System.out.println(digital1.calcularPrecoFinal());
+//        ProdutoDigital digital1 = new ProdutoDigital(149.90,800);
+//        System.out.println(digital1.calcularPrecoFinal());
+//
+//        ProdutoDigital digital2 = new ProdutoDigital(25.40,40);
+//        System.out.println(digital2.calcularPrecoFinal());
+//
+//        ProdutoFisico prod3 = new ProdutoFisico(49.30,7.50);
+//        System.out.println(prod3.calcularPrecoFinal());
 
-        ProdutoDigital digital2 = new ProdutoDigital(25.40,40);
-        System.out.println(digital2.calcularPrecoFinal());
+//        6
 
-        ProdutoFisico prod3 = new ProdutoFisico(49.30,7.50);
-        System.out.println(prod3.calcularPrecoFinal());
+        Funcionario func1 = new Funcionario("Luiza", 4000);
+
     }
 }
 
